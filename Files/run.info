@@ -1,0 +1,242 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     train_merged_lbound-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.supervised.instance.SMOTE-C0-K5-P93.0-S1337-weka.filters.unsupervised.attribute.Remove-V-R1,21,19,5,9,27
+Instances:    110
+Attributes:   6
+              original_shape2D_MajorAxisLength
+              wavelet-LH_ngtdm_Contrast
+              log-sigma-5-0-mm-3D_glrlm_ShortRunLowGrayLevelEmphasis
+              original_glcm_DifferenceEntropy
+              log-sigma-2-0-mm-3D_glcm_Idm
+              Radiomic class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class HIGH-GRADE :
+-0.16 + 
+[original_shape2D_MajorAxisLength] * 7.58 +
+[wavelet-LH_ngtdm_Contrast] * 1.06 +
+[original_glcm_DifferenceEntropy] * -2.97
+
+Class LOW-GRADE :
+0.16 + 
+[original_shape2D_MajorAxisLength] * -7.58 +
+[wavelet-LH_ngtdm_Contrast] * -1.06 +
+[original_glcm_DifferenceEntropy] * 2.97
+
+
+Time taken to build model: 0.01 seconds
+
+=== Predictions on test data ===
+
+inst#,actual,predicted,error,prediction
+1,2:LOW-GRADE,2:LOW-GRADE,,0.902
+2,2:LOW-GRADE,2:LOW-GRADE,,0.563
+3,2:LOW-GRADE,2:LOW-GRADE,,0.905
+4,2:LOW-GRADE,2:LOW-GRADE,,0.968
+5,2:LOW-GRADE,2:LOW-GRADE,,0.591
+6,2:LOW-GRADE,2:LOW-GRADE,,0.955
+7,1:HIGH-GRADE,2:LOW-GRADE,+,0.542
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.842
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.553
+10,1:HIGH-GRADE,1:HIGH-GRADE,,1
+11,1:HIGH-GRADE,2:LOW-GRADE,+,0.81
+1,2:LOW-GRADE,2:LOW-GRADE,,0.819
+2,2:LOW-GRADE,2:LOW-GRADE,,0.658
+3,2:LOW-GRADE,2:LOW-GRADE,,0.837
+4,2:LOW-GRADE,2:LOW-GRADE,,0.915
+5,2:LOW-GRADE,2:LOW-GRADE,,0.955
+6,2:LOW-GRADE,2:LOW-GRADE,,0.898
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.998
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.993
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.977
+10,1:HIGH-GRADE,1:HIGH-GRADE,,0.908
+11,1:HIGH-GRADE,2:LOW-GRADE,+,0.74
+1,2:LOW-GRADE,1:HIGH-GRADE,+,0.515
+2,2:LOW-GRADE,1:HIGH-GRADE,+,0.514
+3,2:LOW-GRADE,1:HIGH-GRADE,+,0.672
+4,2:LOW-GRADE,1:HIGH-GRADE,+,0.535
+5,2:LOW-GRADE,2:LOW-GRADE,,0.614
+6,2:LOW-GRADE,2:LOW-GRADE,,0.928
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.908
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.997
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.927
+10,1:HIGH-GRADE,1:HIGH-GRADE,,0.998
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.604
+1,2:LOW-GRADE,2:LOW-GRADE,,0.968
+2,2:LOW-GRADE,2:LOW-GRADE,,0.597
+3,2:LOW-GRADE,2:LOW-GRADE,,0.745
+4,2:LOW-GRADE,2:LOW-GRADE,,0.739
+5,2:LOW-GRADE,1:HIGH-GRADE,+,0.841
+6,2:LOW-GRADE,2:LOW-GRADE,,0.915
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.595
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.982
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.96
+10,1:HIGH-GRADE,1:HIGH-GRADE,,0.91
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.988
+1,2:LOW-GRADE,2:LOW-GRADE,,0.639
+2,2:LOW-GRADE,2:LOW-GRADE,,0.785
+3,2:LOW-GRADE,1:HIGH-GRADE,+,0.794
+4,2:LOW-GRADE,2:LOW-GRADE,,0.88
+5,2:LOW-GRADE,2:LOW-GRADE,,0.928
+6,2:LOW-GRADE,1:HIGH-GRADE,+,0.711
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.609
+8,1:HIGH-GRADE,2:LOW-GRADE,+,0.794
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.987
+10,1:HIGH-GRADE,2:LOW-GRADE,+,0.735
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.989
+1,2:LOW-GRADE,2:LOW-GRADE,,0.707
+2,2:LOW-GRADE,2:LOW-GRADE,,0.598
+3,2:LOW-GRADE,2:LOW-GRADE,,0.924
+4,2:LOW-GRADE,2:LOW-GRADE,,0.895
+5,2:LOW-GRADE,2:LOW-GRADE,,0.647
+6,1:HIGH-GRADE,2:LOW-GRADE,+,0.636
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.849
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.594
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.987
+10,1:HIGH-GRADE,2:LOW-GRADE,+,0.86
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.898
+1,2:LOW-GRADE,2:LOW-GRADE,,0.88
+2,2:LOW-GRADE,2:LOW-GRADE,,0.902
+3,2:LOW-GRADE,2:LOW-GRADE,,0.888
+4,2:LOW-GRADE,1:HIGH-GRADE,+,0.66
+5,2:LOW-GRADE,2:LOW-GRADE,,0.869
+6,1:HIGH-GRADE,1:HIGH-GRADE,,0.999
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.999
+8,1:HIGH-GRADE,2:LOW-GRADE,+,0.659
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.737
+10,1:HIGH-GRADE,2:LOW-GRADE,+,0.881
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.96
+1,2:LOW-GRADE,2:LOW-GRADE,,0.883
+2,2:LOW-GRADE,2:LOW-GRADE,,0.706
+3,2:LOW-GRADE,1:HIGH-GRADE,+,0.663
+4,2:LOW-GRADE,2:LOW-GRADE,,0.646
+5,2:LOW-GRADE,2:LOW-GRADE,,0.941
+6,1:HIGH-GRADE,1:HIGH-GRADE,,1
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.971
+8,1:HIGH-GRADE,1:HIGH-GRADE,,1
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.955
+10,1:HIGH-GRADE,2:LOW-GRADE,+,0.937
+11,1:HIGH-GRADE,1:HIGH-GRADE,,1
+1,2:LOW-GRADE,2:LOW-GRADE,,0.922
+2,2:LOW-GRADE,2:LOW-GRADE,,0.91
+3,2:LOW-GRADE,2:LOW-GRADE,,0.94
+4,2:LOW-GRADE,2:LOW-GRADE,,0.848
+5,2:LOW-GRADE,2:LOW-GRADE,,0.713
+6,1:HIGH-GRADE,2:LOW-GRADE,+,0.72
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.974
+8,1:HIGH-GRADE,1:HIGH-GRADE,,0.979
+9,1:HIGH-GRADE,1:HIGH-GRADE,,1
+10,1:HIGH-GRADE,1:HIGH-GRADE,,0.997
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.969
+1,2:LOW-GRADE,2:LOW-GRADE,,0.512
+2,2:LOW-GRADE,2:LOW-GRADE,,0.945
+3,2:LOW-GRADE,2:LOW-GRADE,,0.722
+4,2:LOW-GRADE,2:LOW-GRADE,,0.967
+5,2:LOW-GRADE,2:LOW-GRADE,,0.924
+6,1:HIGH-GRADE,1:HIGH-GRADE,,0.674
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.98
+8,1:HIGH-GRADE,2:LOW-GRADE,+,0.613
+9,1:HIGH-GRADE,1:HIGH-GRADE,,0.958
+10,1:HIGH-GRADE,1:HIGH-GRADE,,0.576
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.824
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          89               80.9091 %
+Incorrectly Classified Instances        21               19.0909 %
+Kappa statistic                          0.6182
+Mean absolute error                      0.2512
+Root mean squared error                  0.3625
+Relative absolute error                 50.1933 %
+Root relative squared error             72.4352 %
+Total Number of Instances              110     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.782    0.164    0.827      0.782    0.804      0.619    0.891     0.915     HIGH-GRADE
+                 0.836    0.218    0.793      0.836    0.814      0.619    0.891     0.876     LOW-GRADE
+Weighted Avg.    0.809    0.191    0.810      0.809    0.809      0.619    0.891     0.895     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 43 12 |  a = HIGH-GRADE
+  9 46 |  b = LOW-GRADE
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     test_merged_lbound
+Instances:     unknown (yet). Reading incrementally
+Attributes:   28
+
+=== Predictions on user test set ===
+
+inst#,actual,predicted,error,prediction
+1,1:HIGH-GRADE,2:LOW-GRADE,+,0.959
+2,1:HIGH-GRADE,1:HIGH-GRADE,,0.891
+3,1:HIGH-GRADE,1:HIGH-GRADE,,0.968
+4,2:LOW-GRADE,1:HIGH-GRADE,+,0.81
+5,1:HIGH-GRADE,1:HIGH-GRADE,,0.996
+6,1:HIGH-GRADE,2:LOW-GRADE,+,0.683
+7,1:HIGH-GRADE,1:HIGH-GRADE,,0.736
+8,2:LOW-GRADE,2:LOW-GRADE,,0.812
+9,2:LOW-GRADE,2:LOW-GRADE,,0.838
+10,1:HIGH-GRADE,2:LOW-GRADE,+,0.788
+11,1:HIGH-GRADE,1:HIGH-GRADE,,0.957
+12,1:HIGH-GRADE,1:HIGH-GRADE,,0.572
+13,1:HIGH-GRADE,1:HIGH-GRADE,,1
+14,1:HIGH-GRADE,1:HIGH-GRADE,,0.881
+15,2:LOW-GRADE,2:LOW-GRADE,,0.724
+16,2:LOW-GRADE,2:LOW-GRADE,,0.96
+17,2:LOW-GRADE,2:LOW-GRADE,,0.756
+18,2:LOW-GRADE,2:LOW-GRADE,,0.654
+19,2:LOW-GRADE,1:HIGH-GRADE,+,0.951
+20,2:LOW-GRADE,2:LOW-GRADE,,0.654
+21,2:LOW-GRADE,2:LOW-GRADE,,0.798
+22,1:HIGH-GRADE,1:HIGH-GRADE,,0.818
+23,1:HIGH-GRADE,2:LOW-GRADE,+,0.606
+24,1:HIGH-GRADE,1:HIGH-GRADE,,0.68
+25,1:HIGH-GRADE,1:HIGH-GRADE,,0.954
+26,1:HIGH-GRADE,1:HIGH-GRADE,,0.991
+27,1:HIGH-GRADE,2:LOW-GRADE,+,0.716
+28,2:LOW-GRADE,2:LOW-GRADE,,0.882
+29,2:LOW-GRADE,2:LOW-GRADE,,0.927
+30,2:LOW-GRADE,2:LOW-GRADE,,0.8
+31,1:HIGH-GRADE,1:HIGH-GRADE,,0.932
+32,2:LOW-GRADE,2:LOW-GRADE,,0.624
+33,2:LOW-GRADE,2:LOW-GRADE,,0.552
+34,2:LOW-GRADE,1:HIGH-GRADE,+,0.66
+35,1:HIGH-GRADE,1:HIGH-GRADE,,0.999
+36,1:HIGH-GRADE,2:LOW-GRADE,+,0.981
+
+=== Summary ===
+
+Correctly Classified Instances          27               75      %
+Incorrectly Classified Instances         9               25      %
+Kappa statistic                          0.5031
+Mean absolute error                      0.3277
+Root mean squared error                  0.4457
+Total Number of Instances               36     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.188    0.824      0.700    0.757      0.510    0.784     0.857     HIGH-GRADE
+                 0.813    0.300    0.684      0.813    0.743      0.510    0.784     0.661     LOW-GRADE
+Weighted Avg.    0.750    0.238    0.762      0.750    0.751      0.510    0.784     0.770     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 14  6 |  a = HIGH-GRADE
+  3 13 |  b = LOW-GRADE
+
