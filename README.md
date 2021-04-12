@@ -5,7 +5,9 @@ The "Files" folder contains the trained model (usable in weka with an appropriat
 
 # Preparing the data
 
-The model was trained on radiomic data extracted using [PyRadiomics](https://pyradiomics.readthedocs.io/en/latest/). Using bidimensional masks and the settings described in the paper detailing our study, an appropriate test set can be obtained from any CT exam of a cartilaginoeous tumor.
+The model was trained on radiomic data extracted using [PyRadiomics](https://pyradiomics.readthedocs.io/en/latest/). Using bidimensional masks and the settings file included in the repository, an appropriate test set can be obtained from any CT exam of a cartilaginoeous tumor.
+The extracted data should then be scaled by using the pickled Python objects also included in the repository. The pickled feature list contains the feature set on which to apply the scaler, while the scaler object contains the scikit-learn MinMaxScaler that can be loaded and fitted to the new data.
+Finally, the resulting, scaled dataset should be saved either as a CSV or ARFF file to be read by WEKA. Please note WEKA expects the class to be present in the final column of the dataset, if present.
 
 # How to load and use the model in WEKA
 
