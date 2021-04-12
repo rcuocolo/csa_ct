@@ -1,0 +1,49 @@
+imageType:
+  Original: {}
+  LoG:
+    sigma: [1.0, 2.0, 3.0, 4.0, 5.0]
+  Wavelet: {}
+
+featureClass:
+  shape2D:
+  firstorder:
+  glcm:
+    - 'Autocorrelation'
+    - 'JointAverage'
+    - 'ClusterProminence'
+    - 'ClusterShade'
+    - 'ClusterTendency'
+    - 'Contrast'
+    - 'Correlation'
+    - 'DifferenceAverage'
+    - 'DifferenceEntropy'
+    - 'DifferenceVariance'
+    - 'JointEnergy'
+    - 'JointEntropy'
+    - 'Imc1'
+    - 'Imc2'
+    - 'Idm'
+    - 'Idmn'
+    - 'Id'
+    - 'Idn'
+    - 'InverseVariance'
+    - 'MaximumProbability'
+    - 'SumEntropy'
+    - 'SumSquares'
+  glrlm:
+  glszm:
+  ngtdm:
+  gldm:
+
+setting:
+  normalize: true
+  normalizeScale: 100
+  interpolator: 'sitkBSpline'
+  resampledPixelSpacing: [1, 1, 0]
+  padDistance: 10
+  preCrop: true
+  binWidth: 3
+  force2D: true
+  force2Ddimension: 0
+  voxelArrayShift: 300
+  label: 1
