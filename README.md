@@ -13,10 +13,10 @@ The WEKA workbench allows for a user-friendly implementation of machine learning
 To load our model in WEKA, one can follow these steps:
 - Open the Explorer module
 - Load any dataset (not necessarily the one intended to apply the model to)
-- Open the Classify tab of the Explorer module
-- Right click in the Result list area (lower left) and "Load Model"
+- Open the "Classify" tab of the Explorer module
+- Right click in the "Result list" area (lower left) and "Load Model"
 - Select the model file
 - Select the "Supplied test set" option in the upper left
 - Select the target dataset file
-- Right click in the Result list area (lower left) on the loaded model
+- Right click in the "Result list" area (lower left) on the loaded model
 - Select the "Re-evaluate model on current test set" option
