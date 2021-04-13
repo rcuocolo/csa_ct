@@ -1,2 +1,3 @@
 theme: jekyll-theme-slate
 title: Cartilaginous tumor grade prediction from CT radiomics
+show_downloads: true
