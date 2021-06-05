@@ -25,8 +25,8 @@ To load our model in WEKA, one can follow these steps:
 
 ## Citation
 
-Will update with paper details as soon as possible.
+- S. Gitto, R. Cuocolo, A. Annovazzi, V. Anelli, M. Acquasanta, A. Cincotta, D. Albano, V. Chianca, V. Ferraresi, C. Messina, C. Zoccali, E. Armiraglio, A. Parafioriti, R. Sciuto, A. Luzzati, R. Biagini, M. Imbriaco, L.M. Sconfienza, CT radiomics-based machine learning classification of atypical cartilaginous tumours and appendicular chondrosarcomas, EBioMedicine. 68 (2021) 103407. [https://doi.org/10.1016/j.ebiom.2021.103407](https://doi.org/10.1016/j.ebiom.2021.103407).
 
-## License
+License
 
 Creative Commons Attribution 4.0 International (CC-BY-4.0). See "LICENSE" file for full details.
